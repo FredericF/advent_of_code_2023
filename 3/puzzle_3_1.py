@@ -4,18 +4,8 @@ import re
 with open("./3/data.txt") as f:
     data = f.read().splitlines()
 
-test_data = [
-    "467..114..",
-    "...*......",
-    "..35..633.",
-    "......#...",
-    "617*......",
-    ".....+.58.",
-    "..592.....",
-    "......755.",
-    "...$.*....",
-    ".664.598..",
-]
+with open("./3/test_data.txt") as f:
+    test_data = f.read().splitlines()
 
 
 def get_acceptance_matrix(data):
