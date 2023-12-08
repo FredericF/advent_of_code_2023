@@ -40,7 +40,6 @@ def main():
     print(races)
     print(f"Ways to win test races = {test_races.ways_to_win}; expected 288")
     print(f"Ways to win races: {races.ways_to_win}")
-    real_race = Race(71530, 940200)
-    print(f"Ways to win the real race: {real_race.ways_to_win}")
+
 if __name__ == "__main__":
     main()
