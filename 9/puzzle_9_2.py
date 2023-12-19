@@ -2,7 +2,7 @@ from puzzle_9_1 import t_dat, dat, parse_data
 import numpy as np
 
 
-def previous_in_list(seq):
+def previous_in_list(seq: list[int]) -> int:
     mat = np.full((len(seq), len(seq)), 0)
     mat[0, :] = seq
     for i in range(1, len(seq)):

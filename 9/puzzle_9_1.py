@@ -7,12 +7,12 @@ with open("./9/data.txt") as f:
     dat = f.read().splitlines()
 
 
-def parse_data(data):
+def parse_data(data: list[str]) -> list[list[int]]:
     splitted = [line.split(" ") for line in data]
     return [[int(num) for num in line] for line in splitted]
 
 
-def next_in_list(seq):
+def next_in_list(seq: list[int]) -> int:
     mat = np.full((len(seq), len(seq)), 0)
     mat[0, :] = seq
     for i in range(1, len(seq)):
